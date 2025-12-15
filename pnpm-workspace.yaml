@@ -1,0 +1,3 @@
+packages:
+  - "eo/apps/*"
+  - "eo/packages/*"
