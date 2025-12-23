@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      react-hook-form:
+        specifier: ^7.69.0
+        version: 7.69.0(react@19.2.3)
     devDependencies:
       '@types/node':
         specifier: ^25.0.3
@@ -28,7 +32,7 @@ importers:
         version: 6.36.3(next@16.0.10(@babel/core@7.28.5)(@opentelemetry/api@1.9.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@hookform/resolvers':
         specifier: ^5.2.2
-        version: 5.2.2(react-hook-form@7.68.0(react@19.2.3))
+        version: 5.2.2(react-hook-form@7.69.0(react@19.2.3))
       '@radix-ui/react-accordion':
         specifier: ^1.2.12
         version: 1.2.12(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
@@ -155,9 +159,6 @@ importers:
       react-dom:
         specifier: ^19.2.1
         version: 19.2.3(react@19.2.3)
-      react-hook-form:
-        specifier: ^7.68.0
-        version: 7.68.0(react@19.2.3)
       react-resizable-panels:
         specifier: ^4.0.10
         version: 4.0.10(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
@@ -204,6 +205,9 @@ importers:
       '@clerk/nextjs':
         specifier: ^6.36.3
         version: 6.36.3(next@16.0.10(@babel/core@7.28.5)(@opentelemetry/api@1.9.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+      '@hookform/resolvers':
+        specifier: ^5.2.2
+        version: 5.2.2(react-hook-form@7.69.0(react@19.2.1))
       '@vapi-ai/web':
         specifier: ^2.5.2
         version: 2.5.2
@@ -228,6 +232,9 @@ importers:
       react-dom:
         specifier: 19.2.1
         version: 19.2.1(react@19.2.1)
+      zod:
+        specifier: 3.25.76
+        version: 3.25.76
     devDependencies:
       '@tailwindcss/postcss':
         specifier: ^4
@@ -2401,6 +2408,9 @@ packages:
   '@types/node@20.19.26':
     resolution: {integrity: sha512-0l6cjgF0XnihUpndDhk+nyD3exio3iKaYROSgvh/qSevPXax3L8p5DBRFjbvalnwatGgHEQn2R88y2fA3g4irg==}
 
+  '@types/node@20.19.27':
+    resolution: {integrity: sha512-N2clP5pJhB2YnZJ3PIHFk5RkygRX5WO/5f0WC08tp0wd+sv0rsJk3MqWn3CbNmT2J505a5336jaQj4ph1AdMug==}
+
   '@types/node@25.0.3':
     resolution: {integrity: sha512-W609buLVRVmeW693xKfzHeIV6nJGGz98uCPfeXI1ELMLXVeKYZ9m15fAMSaUPBHYLGFsVRcMmSCksQOrZV9BYA==}
 
@@ -4430,8 +4440,8 @@ packages:
     peerDependencies:
       react: ^19.2.3
 
-  react-hook-form@7.68.0:
-    resolution: {integrity: sha512-oNN3fjrZ/Xo40SWlHf1yCjlMK417JxoSJVUXQjGdvdRCU07NTFei1i1f8ApUAts+IVh14e4EdakeLEA+BEAs/Q==}
+  react-hook-form@7.69.0:
+    resolution: {integrity: sha512-yt6ZGME9f4F6WHwevrvpAjh42HMvocuSnSIHUGycBqXIJdhqGSPQzTpGF+1NLREk/58IdPxEMfPcFCjlMhclGw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18 || ^19
@@ -5592,10 +5602,15 @@ snapshots:
 
   '@floating-ui/utils@0.2.10': {}
 
-  '@hookform/resolvers@5.2.2(react-hook-form@7.68.0(react@19.2.3))':
+  '@hookform/resolvers@5.2.2(react-hook-form@7.69.0(react@19.2.1))':
     dependencies:
       '@standard-schema/utils': 0.3.0
-      react-hook-form: 7.68.0(react@19.2.3)
+      react-hook-form: 7.69.0(react@19.2.1)
+
+  '@hookform/resolvers@5.2.2(react-hook-form@7.69.0(react@19.2.3))':
+    dependencies:
+      '@standard-schema/utils': 0.3.0
+      react-hook-form: 7.69.0(react@19.2.3)
 
   '@humanfs/core@0.19.1': {}
 
@@ -7230,6 +7245,10 @@ snapshots:
       '@types/node': 20.19.26
 
   '@types/node@20.19.26':
+    dependencies:
+      undici-types: 6.21.0
+
+  '@types/node@20.19.27':
     dependencies:
       undici-types: 6.21.0
 
@@ -8979,7 +8998,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 20.19.26
+      '@types/node': 20.19.27
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -9556,7 +9575,11 @@ snapshots:
       react: 19.2.3
       scheduler: 0.27.0
 
-  react-hook-form@7.68.0(react@19.2.3):
+  react-hook-form@7.69.0(react@19.2.1):
+    dependencies:
+      react: 19.2.1
+
+  react-hook-form@7.69.0(react@19.2.3):
     dependencies:
       react: 19.2.3
 

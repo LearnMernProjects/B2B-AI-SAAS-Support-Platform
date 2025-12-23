@@ -17,5 +17,8 @@
     "prettier": "^3.7.4",
     "turbo": "^2.6.3",
     "typescript": "5.7.3"
+  },
+  "dependencies": {
+    "react-hook-form": "^7.69.0"
   }
 }
